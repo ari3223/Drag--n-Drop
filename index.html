@@ -1,0 +1,106 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="containar">
+        <div class="ulContainar">
+        <div class="backLog licontainar">
+            <h1 class="titer">Backlog</h1>
+            <ul class="list">
+                
+            </ul>
+            <div class="addC">
+                <div class="btnC">
+                <p class="cancel">X</p>
+                <button class="save">save</button>
+            </div>
+                <textarea class="userTx"></textarea>
+            </div>
+            <button class="add">new</button>
+            
+        </div>
+    </div>
+        <div class="ulContainar">
+        <div class="inhandsec licontainar">
+            <h1 class="titer">on Hold</h1>
+            <ul class="list" draggable="true" ></ul>
+            <div class="addC">
+                <div class="btnC">
+                <p class="cancel">X</p>
+                <button class="save">save</button>
+            </div>
+                <textarea class="userTx"></textarea>
+            </div>
+            <button class="add">new</button>
+        </div>
+        <div class="list deleteBtn"  ondrop="deletetx()">
+            X
+        </div>
+        <div class="deleteBtn register" onclick="show_sign()">
+            sign <br> &nbsp; in
+        </div>
+    </div>
+        <div class="ulContainar">
+        <div class="completesec licontainar">
+            <h1 class="titer">Complete</h1>
+            <ul class="list"></ul>
+            <div class="addC">
+                <div class="btnC">
+                <p class="cancel">X</p>
+                <button class="save">save</button>
+            </div>
+                <textarea class="userTx"></textarea>
+            </div>
+            <button class="add">new</button>
+    </div>
+</div>
+<div class="sign_section" style="display: none" onclick="hide_sign(event)">
+    <div class="register_containar">
+        <div class="sign_titr">
+            <div class="signin_titr click-sign" onclick="signSections(event)" style="border-right: 2px solid black;">Sign in</div>
+            <div class="signup_titr" onclick="signSections(event)">Sign up</div>
+        </div>
+        <div class="sign_body">
+            <div class="sign_in">
+                <h1>sign in</h1>
+                <div class="report_text" style="display: none;"></div>
+                <div class="inputC">
+                    <label for="name">name:</label><br>
+                    <input type="text" name="name" placeholder="your name">
+                </div>
+                <div class="inputC">
+                    <label for="password">password:</label><br>
+                    <input type="password" name="password" placeholder="Enter your password">
+                </div>
+                    <input type="button" class="signBtn" value="log in">
+            </div>
+
+            <div class="sign_up" style="display: none;">
+                <h1>sign up</h1>
+                <div class="report_text" style="display: none;"></div>
+                <div class="inputC">
+                    <label for="name">name:</label><br>
+                    <input type="text" name="name" placeholder="your name">
+                </div>
+
+                <div class="inputC">
+                    <label for="password">password:</label><br>
+                    <input type="password" name="password" placeholder="Enter your password">
+                </div>
+                    <input type="button" class="signBtn" value="Register">
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- containar of section navbar End -->
+<script src="class/text.js"></script>
+<script src="class/api.js"></script>
+<script src="Js.js"></script>
+</body>
+
+</html>
